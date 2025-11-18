@@ -56,14 +56,22 @@ Classes on body set to work with mt-auto on footer to ensure it always stays at 
             </div>
         </div>
     </nav>
-    <!--Header with carousel- used Emmet shorthand "header.container>.row>.col-12.col-xl-6*2"  to create the header with a class of container, and inside that a 
+    <!--Header with carousel-->
+    <!-- used Emmet shorthand "header.container>.row>.col-12.col-xl-6*2"  to create the header with a class of container, and inside that a 
     row. Inside the row we'll add a column with classess col-12 and col-xl-6. Finally we can add asterisk 2 to make two of those columns inside the row. And when 
     we hit TAB, the header grid is created.-->
-    <header class="container">
+    <header id="header" class="container section">
         <div class="row">
-            <div class="col-12 col-xl-6">Boardwalk Games intro text section</div>
-            <div class="col-12 col-xl-6">Carousel</div>
-        </div>
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <h1 class="display-3">Boardwalk Games</h1>
+                <p class="lead display-6 sub-heading-color">Your next adventure is waiting!</p>
+                <p class="my-4">Welcome to Boardwalk Games, Your Ultimate Gaming Getaway! Escape into the world of board
+                    games and café delights. Whether you're a casual gamer seeking a cosy nook to unwind, a
+                    board game enthusiast ready for your next challenge, or a student gamer looking for a fun,
+                    affordable hangout, we've got you covered.</p>
+            </div>
+            <div class="col-12 col-xl-6">
+            </div>
     </header>
 
     <!--main element to hold all key sections of the homepage.it is not part of the grid structure-->
