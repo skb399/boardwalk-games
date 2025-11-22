@@ -73,11 +73,20 @@ h2 {
     font-weight: bold;
     color: var(--highlight-color);
     background-color: transparent;
+    font-family: var(--secondary-font)
 }
 
 #services .card {
     margin-bottom: 1.5rem;
 }
+
+/* Game Library Card */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
 
 /* grid visualisation CSS for testing 
 
