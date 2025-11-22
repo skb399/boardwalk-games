@@ -120,6 +120,12 @@ h2 {
     color: var(--secondary-color)
 }
 
+/*Bootstrap table was already set to black background due to ".table-dark" class, "*" To override this, we can add the wildcard selector - the asterisk - to our CSS selector,
+to remove the background colour from all descendants of our table.*/
+#contact .table-dark * {
+    background-color: transparent;
+}
+
 /* grid visualisation CSS for testing 
 
 .container,
