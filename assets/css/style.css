@@ -114,6 +114,28 @@ h2 {
     border: none;
 }
 
+
+/* Events Section*/
+#events p.discount {
+    background-color: var(--highlight-color);
+    color: white;
+    border: solid 3px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#events-table tbody tr:hover td,
+#events-table tbody tr:hover th {
+    background-color: var(--highlight-color) !important;
+    color: white !important;
+    font-weight: bold;
+
+}
+
 /* Footer / Contact Section */
 
 #contact {
