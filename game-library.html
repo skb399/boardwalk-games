@@ -42,13 +42,16 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="game-library.html">Games</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="booking.html" class="btn custom-button-filled custom-button-outline ms-lg-3">Book
+                        <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book
                             now</a>
                     </li>
                 </ul>
@@ -108,7 +111,7 @@
          it is not part of the grid structure -->
     <main>
         <main>
-            <!--Services section-->
+            <!--Games section-->
             <section id="new-games" class="container section">
                 <div class="row">
                     <!--Emmet short hand for below "col-12"-->
@@ -230,6 +233,56 @@
                                 <p><em>Ages: </em> 8+</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <!--Reserve a game section-->
+            <section id="reserve-form" class="container section">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-8 col-xl-10 justify-content-center">
+                        <h2 class="text-center">Reserve a game</h2>
+                        <p>Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the
+                            adventure begin! Fill out your details and preferred game below, and we'll have it set aside
+                            for you when you arrive.</p>
+                        <form action="success.html" method="GET">
+                            <div class="row justifiy-content-center">
+                                <div class="col-12 col-lg-4 mb-4">
+                                    <label for="reserve-name" class="form-label">Full name</label>
+                                    <input class="form-control" id="reserve-name" name="reserve-name" type="text"
+                                        required>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-4">
+                                    <label for="reserve-phone" class="form-label">Phone number</label>
+                                    <input class="form-control" id="reserve-phone" name="reserve-phone" type="tel"
+                                        required>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-4">
+                                    <label for="reserve-email" class="form-label">Email</label>
+                                    <input class="form-control" id="reserve-email" name="reserve-email" type="email"
+                                        required>
+                                </div>
+                                <div class="col-12 col-lg-8 col-xl-8 mb-4">
+                                    <label for="event-type" class="form-label">Select game</label>
+                                    <select id="reserve-game" class="form-select" name="reserve-game" required>
+                                        <option value="" selected>Select Game</option>
+                                        <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                        <option value="mystic-woods">Mystic Woods</option>
+                                        <option value="captains-gambit">Captain's Gambit</option>
+                                        <option value="critter-quest">Critter Quest</option>
+                                        <option value="setters-of-catan">Setters of Catan</option>
+                                        <option value="monopoly">Monopoly</option>
+                                        <option value="exploding-kittens">Exploding Kittens</option>
+                                        <option value="cluedo">Cluedo</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg-4 col-xl-4 mb-4">
+                                    <label for="date" class="form-label">Requested date</label>
+                                    <input class="form-control" id="date" name="date" type="date" required>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end"><button type="submit"
+                                    class="btn custom-button-outline">Submit</button></div>
+                        </form>
                     </div>
                 </div>
             </section>
